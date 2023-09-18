@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Recruiters</title>
+</head>
+<body>
+    <h1>List of Recruiters</h1>
+    <ul>
+        {% for recruiter in recruiters %}
+            <li>{{ recruiter.company_name }} - {{ recruiter.location }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
